@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borås Zoo</title>
-    <link rel="stylesheet" href="css/info.txt">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-<header id="indexheader">
-    <img src="img/icons_other/hamburgermeny.png" alt="ikon hamburgermeny">
-    <h1>Borås Zoo</h1>
+<body id="index_body">
+<header id="header">
+    <img src="img/icons_other/hamburgermeny.png" alt="ikon hamburgermeny" id="hamburgermeny">
+    <a href="../index.html">
+    <h1 id="title">Borås Zoo</h1>
+    </a>
     <div id="open_today">
         <h2>Öppet idag:</h2>
         <h3>10:00 - 22:00</h3>
@@ -35,9 +38,38 @@
         <img src="/img/slideshow/djurbild.jpg" alt="djurbild">
         <div id djurslidetext>    
             <h2>Flest djur i Borås!</h2>
-            <h3>De circa 401 djuren i 46 olika arter kommer få dig att aldrig tröttna, med ett flertal </h3>
+            <h3>De circa 401 djuren i 46 olika arter kommer få dig att aldrig tröttna!</h3>
         </div>
     </div>
 </section>
+<section id="linkboxsection">
+    <article id="bokaarticle" class="linkcard">
+            <h3 class="cardtitle">Boka Nu!</h3>
+            <h4>Vuxen: 100kr</h4>
+            <h4>Barn: 20kr</h4>
+    </article>
+    <article id="Restaurangenarticle" class="linkcard">
+            <h3 class="cardtitle">Restaurangen</h3>
+            <h4>Njut av vår fina buffé! Närproducerad mat!
+            </h4>
+            <h4>Vuxna 50kr, Barn 30kr</h4>
+    </article>
+    <article id="omossarticle" class="linkcard">
+            <h3 class="cardtitle">Om oss</h3>
+            <h4>Här kan du se alla djur!
+            </h4>
+            <h4>Här kan du se alla anställda!</h4>
+    </article>
+</section>
+<footer>
+<div id="quote">
+<h3>"Djur är bäst i världen och alla gillar dem" - Albert Einstein</h3>
+</div>
+<div id="endtext">
+<h5>© Borås Zoo 2022</h5>
+<h5>Ej att Förväxlas med "Borås Djurpark"</h5>
+</div>
+</footer>
+
 </body>
 </html>
