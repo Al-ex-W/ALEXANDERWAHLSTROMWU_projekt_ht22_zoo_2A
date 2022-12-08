@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body id="index_body">
-<header id="header">
+<div class="gridwrapper">
+
+    <header id="header">
     <img src="img/icons_other/hamburgermeny.png" alt="ikon hamburgermeny" id="hamburgermeny">
     <a href="../index.html">
     <h1 id="title">Borås Zoo</h1>
@@ -18,25 +20,25 @@
         <h2>Öppet idag:</h2>
         <h3>10:00 - 22:00</h3>
     </div>
-</header>
+    </header>
 <section id="slideshow">
-    <div id="restaurangslide">
-        <img src="/img/slideshow/restaurang.png" alt="restaurangbild">
-        <div id restaurangslidetext>    
+    <div id="restaurangslide" class="slide">
+        <img src="/img/slideshow_backgrounds/restaurang.png" alt="restaurangbild" id="restaurangbild">
+        <div id="restaurangslidetext" class="slidetitle">    
             <h2>Bästa maten i Borås!</h2>
             <h3>Närproducerat kött, gourmeträtter, men även en prisvärd buffé för 50 kr!</h3>
         </div>
     </div>
-    <div id="djurparkslide">
-        <img src="/img/slideshow/djurparksbild.png" alt="djurparksbild">
-        <div id djurparkslidetext>    
+    <div id="djurparkslide" class="slide" style="display: none;">
+        <img src="/img/slideshow_backgrounds/djurparksbild.png" alt="djurparksbild">
+        <div id="djurparkslidetext" class="slidetitle">    
             <h2>Bästa djurparken i Borås!</h2>
             <h3>Borås Zoo är den i särklass bästa djurparken i hela Borås! Med en yta på 30 km2, 20 restauranger, och en gratis spårväg runt hela parken utklassar vi alla konkurrenter!</h3>
         </div>
     </div>
-    <div id="djurslide">
-        <img src="/img/slideshow/djurbild.jpg" alt="djurbild">
-        <div id djurslidetext>    
+    <div id="djurslide" class="slide" style="display: none;">
+        <img src="/img/slideshow_backgrounds/djurbild.jpg" alt="djurbild">
+        <div id="djurslidetext" class="slidetitle">    
             <h2>Flest djur i Borås!</h2>
             <h3>De circa 401 djuren i 46 olika arter kommer få dig att aldrig tröttna!</h3>
         </div>
@@ -70,6 +72,7 @@
 <h5>Ej att Förväxlas med "Borås Djurpark"</h5>
 </div>
 </footer>
+</div>
 
 </body>
 </html>
