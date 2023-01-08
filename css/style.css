@@ -55,9 +55,8 @@ grid-template-areas:
     "fo";
 }
 
-    #matflexbox { grid-area: mat; }
-    #bmatflexbox { grid-area: bmat; }
-    #div4 { grid-area: 4 / 1 / 5 / 6; }
+    #matflexbox { grid-area: mat; background-color: plum;}
+    #bmatflexbox { grid-area: bmat; background-color: rgb(118, 223, 255);}
 
 #title  {
 text-decoration: none;
@@ -167,7 +166,12 @@ header    {
 
 }
 
-#djurslide  {
+#djurslidetext  {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -199,11 +203,13 @@ header    {
 #mattext    {
     grid-area: mtext;
     text-align: center;
+    background-color: plum;
 }
 
 #bmattext   {
     grid-area: bmtext;
     text-align: center;
+    background-color: rgb(118, 223, 255);
 }
 
 .matcard    {
@@ -213,6 +219,11 @@ header    {
     background-color: #A5E693;
     margin: 2vh;
     border-radius: 10px;
+    box-shadow: 0px 0px 16px 12px rgba(0,0,0,.40);
+}
+
+.matcard:hover  {
+    cursor: pointer;
 }
 
 .matcardtext  {
@@ -220,7 +231,20 @@ header    {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    filter: drop-shadow(0px 0px 4px #000);
 }
+
+#dish1  {background-image: url(/img/food/dish1.jpg); background-position: center; color: #3391c7;}
+#dish2  {background-image: url(/img/food/dish2.jpg); background-position: center; color: rgb(104, 15, 85);}
+#dish3  {background-image: url(/img/food/dish3.jpg); background-position: center; color: rgb(189, 178, 178);}
+#dish4  {background-image: url(/img/food/dish4.jpg); background-position: center; color: rgb(184, 255, 18);}
+#dish5  {background-image: url(/img/food/dish5.jpeg); background-size: cover; color: aliceblue;}
+#dish6  {background-image: url(/img/food/dish6.jpeg); background-size: cover; background-position: center; color: antiquewhite;}
+#dish7  {background-image: url(/img/food/dish7.jpeg); background-size: cover; color: rgb(0, 0, 0);}
+#dish8  {background-image: url(/img/food/dish8.jpeg); background-size: cover; color: #4594c9;}
+#dish9  {background-image: url(/img/food/dish9.webp); background-size: cover; color: chartreuse;}
+#dish10 {background-image: url(/img/food/dish10.jpg); background-size: cover; background-position: center; color: aqua;}
+#dish11 {background-image: url(/img/food/facepaint.png); background-size: cover; background-position: center; color: #ffffff;}
 
 
 
