@@ -10,23 +10,54 @@ body {
 display: grid;
 grid-template-rows: 12vh 88vh 50vh 16vh;
 grid-template-columns: 1fr; 
-
+grid-template-areas: 
+"he"
+"sl"
+"bo"
+"fo";
 }
 
+
 #gridwrapper_omoss {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 12vh 0.7fr 1fr 1fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 12vh 2fr 2fr 25vh 16vh;
+        grid-gap: 15px;
+        text-align: center;
+        background-color: #d5dfd2;
+        grid-template-areas: 
+        "he he he"
+        "op t1 t1"
+        "t2 t2 bi"
+        "t3 t3 t3"
+        "fo fo fo";
     }
     
-    #omossheader { grid-area: 1 / 1 / 2 / 6; }
-    #textruta1 { grid-area: 2 / 1 / 3 / 6; }
-    #bildruta { grid-area: 3 / 5 / 4 / 6; }
-    #textruta2 { grid-area: 3 / 1 / 4 / 5; }
-    #textruta3 { grid-area: 4 / 1 / 5 / 6; }
-    .div6 { grid-area: 5 / 1 / 6 / 6; }
+    #openruta { grid-area: op;}
+    #textruta1 { grid-area: t1; }
+    #bildruta { grid-area: bi; }
+    #textruta2 { grid-area: t2; }
+    #textruta3 { grid-area: t3; }
+    #omossfooter { grid-area: fo; }
+
+#gridwrapper_restaurang {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 1fr 10vh 1fr 16vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    "he"
+    "mtext"
+    "mat"
+    "bmtext"
+    "bmat"
+    "fo";
+}
+
+    #matflexbox { grid-area: mat; }
+    #bmatflexbox { grid-area: bmat; }
+    #div4 { grid-area: 4 / 1 / 5 / 6; }
 
 #title  {
 text-decoration: none;
@@ -72,7 +103,8 @@ a:visited   {
     text-decoration: none;
 }
 
-#indexheader {
+
+header    {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -81,22 +113,29 @@ a:visited   {
     background-color: green;
     align-items: center;
     text-decoration: none;
-    grid-row: 1;
-    grid-column: 1;
     z-index: 2;
+    grid-area: he;
 }
 
-#omossheader    {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: sticky;
-    top: 0;
-    background-color: green;
-    align-items: center;
-    text-decoration: none;
-    z-index: 2;
+#openruta   {
+    text-align: center;
+    border: 2px solid #A5E693;
+    width: 350px;
+    height: 375px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+
 }
+
+#omossbildruta  {
+    border-radius: 10px;
+    box-shadow: -1px 5px 16px 0px rgba(0,0,0,1);
+    border: 3px solid #1C6EA4;
+}
+
+
 
 
 
@@ -146,6 +185,44 @@ a:visited   {
   transform: translate(-50%, -50%);
 }
 
+.matflex   {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#mattext    {
+    grid-area: mtext;
+    text-align: center;
+}
+
+#bmattext   {
+    grid-area: bmtext;
+    text-align: center;
+}
+
+.matcard    {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background-color: #A5E693;
+    margin: 2vh;
+    border-radius: 10px;
+}
+
+.matcardtext  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
 
 
 .linkcard {
@@ -155,10 +232,25 @@ a:visited   {
     margin: auto;
     text-align: center;
     border-radius: 20px;
-    background-color: rgb(36, 36, 36);
     flex-shrink: 0;
     transition: box-shadow 0.15s ease-in-out;
     text-decoration: none;
+    background-size:cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.link1  {
+    background-image: url(/img/slideshow_backgrounds/bokanuarticlebild.jpg);
+}
+
+.link2  {
+    background-image: url(/img/slideshow_backgrounds/restaurangenarticlebild.jpg);
+}
+
+.link3  {
+    background-image: url(/img/slideshow_backgrounds/omossarticlebild.jpg);
 }
 
 .linkcard:hover {
@@ -177,7 +269,15 @@ a:visited   {
 }
 
 .articlelink    {
-    color:gray;
+    color:rgb(0, 255, 149);
+    
+}
+
+.articleimg     {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
 }
 
 
@@ -185,14 +285,13 @@ a:visited   {
 footer  {
    display: flex;
    position: relative;
-   grid-row: 4;
-   grid-column: 1;
    background-image: url(/img/slideshow_backgrounds/landskapsfooter.jpg);
    background-size: cover;
-   position:absolute
    bottom: 0;
    width: 100%;
+   grid-area: fo;
 }
+
 
 #endtext    {
     order: 1;
