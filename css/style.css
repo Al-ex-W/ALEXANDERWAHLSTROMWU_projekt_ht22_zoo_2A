@@ -1,11 +1,13 @@
 *   {
     font-family: gelasio;
 }
+
 body {
     margin: 0;
     overflow-x: hidden;
 
 }
+
 #gridwrapper_index {
 display: grid;
 grid-template-rows: 12vh 88vh 50vh 16vh;
@@ -16,7 +18,6 @@ grid-template-areas:
 "bo"
 "fo";
 }
-
 
 #gridwrapper_omoss {
         display: grid;
@@ -31,7 +32,7 @@ grid-template-areas:
         "t2 t2 bi"
         "t3 t3 t3"
         "fo fo fo";
-    }
+}
     
     #openruta { grid-area: op;}
     #textruta1 { grid-area: t1; }
@@ -64,8 +65,7 @@ color: black;
 font-size: 5vh;
 }
 
-#title:hover
-{
+#title:hover    {
    cursor: pointer;
 }
 
@@ -92,7 +92,6 @@ font-size: 5vh;
     width: auto;
 }
 
-
 a {
     text-decoration: none;
     
@@ -102,14 +101,13 @@ a:visited   {
     text-decoration: none;
 }
 
-
 header    {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: sticky;
     top: 0;
-    background-color: green;
+    background-color: #85FF70;
     align-items: center;
     text-decoration: none;
     z-index: 2;
@@ -134,10 +132,6 @@ header    {
     border: 3px solid #1C6EA4;
 }
 
-
-
-
-
 #slideshow  {
     background-color: chocolate;
     grid-row: 2;
@@ -156,14 +150,7 @@ header    {
 
 .slidetitle {
     text-align: center;
-}
-
-#restaurangslide    {
-}
-
-#djurparkslide  {
-    background-color: darkslateblue;
-
+    filter: drop-shadow(0px 0px 5px #ffffff);
 }
 
 #djurslidetext  {
@@ -231,23 +218,20 @@ header    {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    filter: drop-shadow(0px 0px 4px #000);
+    filter: drop-shadow(0px 5px 9px #000);
 }
 
-#dish1  {background-image: url(/img/food/dish1.jpg); background-position: center; color: #3391c7;}
-#dish2  {background-image: url(/img/food/dish2.jpg); background-position: center; color: rgb(104, 15, 85);}
-#dish3  {background-image: url(/img/food/dish3.jpg); background-position: center; color: rgb(189, 178, 178);}
-#dish4  {background-image: url(/img/food/dish4.jpg); background-position: center; color: rgb(184, 255, 18);}
-#dish5  {background-image: url(/img/food/dish5.jpeg); background-size: cover; color: aliceblue;}
-#dish6  {background-image: url(/img/food/dish6.jpeg); background-size: cover; background-position: center; color: antiquewhite;}
-#dish7  {background-image: url(/img/food/dish7.jpeg); background-size: cover; color: rgb(0, 0, 0);}
-#dish8  {background-image: url(/img/food/dish8.jpeg); background-size: cover; color: #4594c9;}
-#dish9  {background-image: url(/img/food/dish9.webp); background-size: cover; color: chartreuse;}
-#dish10 {background-image: url(/img/food/dish10.jpg); background-size: cover; background-position: center; color: aqua;}
+#dish1  {background-image: url(/img/food/dish1.jpg); background-position: center; color: #ffffff;}
+#dish2  {background-image: url(/img/food/dish2.jpg); background-position: center; color: rgb(255, 255, 255);}
+#dish3  {background-image: url(/img/food/dish3.jpg); background-position: center; color: rgb(255, 255, 255);}
+#dish4  {background-image: url(/img/food/dish4.jpg); background-position: center; color: rgb(255, 255, 255);}
+#dish5  {background-image: url(/img/food/dish5.jpeg); background-size: cover; color: rgb(255, 255, 255);}
+#dish6  {background-image: url(/img/food/dish6.jpeg); background-size: cover; background-position: center; color: rgb(255, 255, 255);}
+#dish7  {background-image: url(/img/food/dish7.jpeg); background-size: cover; color: rgb(255, 255, 255);}
+#dish8  {background-image: url(/img/food/dish8.jpeg); background-size: cover; color: #ffffff;}
+#dish9  {background-image: url(/img/food/dish9.webp); background-size: cover; color: rgb(255, 255, 255);}
+#dish10 {background-image: url(/img/food/dish10.jpg); background-size: cover; background-position: center; color: rgb(255, 255, 255);}
 #dish11 {background-image: url(/img/food/facepaint.png); background-size: cover; background-position: center; color: #ffffff;}
-
-
-
 
 .linkcard {
     box-shadow: 0px 0px 16px 12px rgba(0,0,0,.75);
@@ -282,11 +266,9 @@ header    {
     box-shadow: 0px 0px 20px 14px rgba(0,0,0,.75);
 }
 
-
 #linkboxsection {
     display: flex;
     flex-direction: row;
-    justify-content: ;
     grid-row: 3;
     grid-column: 1;
     
@@ -304,8 +286,6 @@ header    {
     
 }
 
-
-
 footer  {
    display: flex;
    position: relative;
@@ -315,7 +295,6 @@ footer  {
    width: 100%;
    grid-area: fo;
 }
-
 
 #endtext    {
     order: 1;
@@ -333,7 +312,5 @@ footer  {
 .omosstitles    {
     text-align: center;
 }
-
-#
 
 

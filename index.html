@@ -1,90 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borås Zoo</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/img/icons_other/hamburgermeny.png">
-    <script src="/js/js.js"></script>
-</head>
-<body id="index_body">
-<div id="gridwrapper_index">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Borås Zoo</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="img/icons_other/hamburgermeny.png">
+        <script src="js/js.js"></script>
+    </head>
+    <body id="index_body">
+    <div id="gridwrapper_index">
 
-    <header id="indexheader">
-    <img src="img/icons_other/hamburgermeny.png" alt="ikon hamburgermeny" id="hamburgermeny">
-    <a href="../index.html">
-    <h1 id="title">Borås Zoo</h1>
-    </a>
-    
-    <div id="open_today">
-        <a href="/omoss.html">
-        <h2>Öppet idag:</h2>
-        <h3>10:00 - 22:00</h3>
-        </a>
-    </div>
-    </header>
-<section id="slideshow">
-    <div id="restaurangslide" class="slide">
-        <img src="/img/slideshow_backgrounds/restaurang.png" alt="restaurangbild" id="restaurangbild">
-        <div id="restaurangslidetext" class="slidetitle">    
-            <h2>Bästa maten i Borås!</h2>
-            <h3>Närproducerat kött, gourmeträtter, men även en prisvärd buffé för 50 kr!</h3>
+        <header id="indexheader">
+            <img src="img/icons_other/hamburgermeny.png" alt="ikon hamburgermeny" id="hamburgermeny">
+            <a href="index.html">
+                <h1 id="title">Borås Zoo</h1>
+            </a>
+            <div id="open_today">
+                <a href="omoss.html">
+                <h2>Öppet idag:</h2>
+                <h3>10:00 - 22:00</h3>
+                </a>
+            </div>
+        </header>
+    <section id="slideshow">
+        <div id="restaurangslide" class="slide">
+            <img src="img/slideshow_backgrounds/restaurang.png" alt="restaurangbild" id="restaurangbild">
+            <div id="restaurangslidetext" class="slidetitle">    
+                <h2>Bästa maten i Borås!</h2>
+                <h3>Närproducerat kött, gourmeträtter, men även en prisvärd buffé för 50 kr!</h3>
+            </div>
         </div>
-    </div>
-    <div id="djurparkslide" class="slide" style="display: none;">
-        <img src="/img/slideshow_backgrounds/djurparksbild.png" alt="djurparksbild">
-        <div id="djurparkslidetext" class="slidetitle">    
-            <h2>Bästa djurparken i Borås!</h2>
-            <h3>Borås Zoo är den i särklass bästa djurparken i hela Borås! Med en yta på 30 km2, 20 restauranger, och en gratis spårväg runt hela parken utklassar vi alla konkurrenter!</h3>
+        <div id="djurparkslide" class="slide" style="display: none;">
+            <img src="img/slideshow_backgrounds/djurparksbild.png" alt="djurparksbild">
+            <div id="djurparkslidetext" class="slidetitle">    
+                <h2>Bästa djurparken i Borås!</h2>
+                <h3>Borås Zoo är den i särklass bästa djurparken i hela Borås! Med en yta på 30 km2, 20 restauranger, och en gratis spårväg runt hela parken utklassar vi alla konkurrenter!</h3>
+            </div>
         </div>
-    </div>
-    <div id="djurslide" class="slide" style="display: none;">
-        <img src="/img/slideshow_backgrounds/djurbild.jpg" alt="djurbild">
-        <div id="djurslidetext" class="slidetitle">    
-            <h2>Flest djur i Borås!</h2>
-            <h3>De circa 401 djuren i 46 olika arter kommer få dig att aldrig tröttna!</h3>
+        <div id="djurslide" class="slide" style="display: none;">
+            <img src="img/slideshow_backgrounds/djurbild.jpg" alt="djurbild">
+            <div id="djurslidetext" class="slidetitle">    
+                <h2>Flest djur i Borås!</h2>
+                <h3>De circa 401 djuren i 46 olika arter kommer få dig att aldrig tröttna!</h3>
+            </div>
         </div>
+    </section>
+    <section id="linkboxsection">
+        <article id="bokaarticle" class="linkcard link1">
+            <a href="boka.html" class="articlelink">
+                <h3 class="cardtitle">Boka Nu!</h3>
+                <h4>Vuxen: 100kr</h4>
+                <h4>Barn: 20kr</h4>
+            </a> 
+        </article>
+        <article id="Restaurangenarticle" class="linkcard link2">
+            <a href="restaurang.html" class="articlelink">
+                <h3 class="cardtitle">Restaurangen</h3>
+                <h4>Njut av vår fina buffé! Närproducerad mat!</h4>
+                <h4>Vuxna 50kr, Barn 30kr</h4>
+            </a>
+        </article>
+        <article id="omossarticle" class="linkcard link3"> 
+            <a href="omoss.html" class="articlelink">
+                <h3 class="cardtitle">Om oss</h3>
+                <h4>Här kan du se vår historia!</h4>
+                <h4>Hur blev detta en succé?</h4>
+            </a>
+        </article>
+    </section>
+    <footer id="indexfooter">
+        <div id="quote">
+            <h3><u>"Djur är bäst i världen och alla gillar dem" - Albert Einstein</u></h3>
+        </div>
+        <div id="endtext">
+        <h5>© Borås Zoo 2022</h5>
+        <h5>Ej att Förväxlas med "Borås Djurpark"</h5>
+        </div>
+    </footer>
     </div>
-</section>
-<section id="linkboxsection">
-    <article id="bokaarticle" class="linkcard link1">
-        <a href="boka.html" class="articlelink">
-            <h3 class="cardtitle">Boka Nu!</h3>
-            <h4>Vuxen: 100kr</h4>
-            <h4>Barn: 20kr</h4>
-        </a>
-       
-    </article>
-    <article id="Restaurangenarticle" class="linkcard link2">
-        <a href="/restaurang.html" class="articlelink">
-            <h3 class="cardtitle">Restaurangen</h3>
-            <h4>Njut av vår fina buffé! Närproducerad mat!
-            </h4>
-            <h4>Vuxna 50kr, Barn 30kr</h4>
-        </a>
-    </article>
-    <article id="omossarticle" class="linkcard link3"> 
-        <a href="/omoss.html" class="articlelink">
-            <h3 class="cardtitle">Om oss</h3>
-            <h4>Här kan du se vår historia!
-            </h4>
-            <h4>Hur blev detta en succé?</h4>
-        </a>
-    </article>
-</section>
-<footer id="indexfooter">
-<div id="quote">
-    <h3><u>"Djur är bäst i världen och alla gillar dem" - Albert Einstein</u></h3>
-</div>
-<div id="endtext">
-<h5>© Borås Zoo 2022</h5>
-<h5>Ej att Förväxlas med "Borås Djurpark"</h5>
-</div>
-</footer>
-</div>
-
-</body>
-</html>
+    </body>
+    </html>
