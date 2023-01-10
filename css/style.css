@@ -221,17 +221,17 @@ header    {
     filter: drop-shadow(0px 5px 9px #000);
 }
 
-#dish1  {background-image: url(/img/food/dish1.jpg); background-position: center; color: #ffffff;}
-#dish2  {background-image: url(/img/food/dish2.jpg); background-position: center; color: rgb(255, 255, 255);}
-#dish3  {background-image: url(/img/food/dish3.jpg); background-position: center; color: rgb(255, 255, 255);}
-#dish4  {background-image: url(/img/food/dish4.jpg); background-position: center; color: rgb(255, 255, 255);}
-#dish5  {background-image: url(/img/food/dish5.jpeg); background-size: cover; color: rgb(255, 255, 255);}
-#dish6  {background-image: url(/img/food/dish6.jpeg); background-size: cover; background-position: center; color: rgb(255, 255, 255);}
-#dish7  {background-image: url(/img/food/dish7.jpeg); background-size: cover; color: rgb(255, 255, 255);}
-#dish8  {background-image: url(/img/food/dish8.jpeg); background-size: cover; color: #ffffff;}
-#dish9  {background-image: url(/img/food/dish9.webp); background-size: cover; color: rgb(255, 255, 255);}
-#dish10 {background-image: url(/img/food/dish10.jpg); background-size: cover; background-position: center; color: rgb(255, 255, 255);}
-#dish11 {background-image: url(/img/food/facepaint.png); background-size: cover; background-position: center; color: #ffffff;}
+#dish1  {background-image: url(../img/food/dish1.jpg); background-position: center; color: #ffffff;}
+#dish2  {background-image: url(../img/food/dish2.jpg); background-position: center; color: rgb(255, 255, 255);}
+#dish3  {background-image: url(../img/food/dish3.jpg); background-position: center; color: rgb(255, 255, 255);}
+#dish4  {background-image: url(../img/food/dish4.jpg); background-position: center; color: rgb(255, 255, 255);}
+#dish5  {background-image: url(../img/food/dish5.jpeg); background-size: cover; color: rgb(255, 255, 255);}
+#dish6  {background-image: url(../img/food/dish6.jpeg); background-size: cover; background-position: center; color: rgb(255, 255, 255);}
+#dish7  {background-image: url(../img/food/dish7.jpeg); background-size: cover; color: rgb(255, 255, 255);}
+#dish8  {background-image: url(../img/food/dish8.jpeg); background-size: cover; color: #ffffff;}
+#dish9  {background-image: url(../img/food/dish9.webp); background-size: cover; color: rgb(255, 255, 255);}
+#dish10 {background-image: url(../img/food/dish10.jpg); background-size: cover; background-position: center; color: rgb(255, 255, 255);}
+#dish11 {background-image: url(../img/food/facepaint.png); background-size: cover; background-position: center; color: #ffffff;}
 
 .linkcard {
     box-shadow: 0px 0px 16px 12px rgba(0,0,0,.75);
@@ -250,15 +250,15 @@ header    {
 }
 
 .link1  {
-    background-image: url(/img/slideshow_backgrounds/bokanuarticlebild.jpg);
+    background-image: url(../img/slideshow_backgrounds/bokanuarticlebild.jpg);
 }
 
 .link2  {
-    background-image: url(/img/slideshow_backgrounds/restaurangenarticlebild.jpg);
+    background-image: url(../img/slideshow_backgrounds/restaurangenarticlebild.jpg);
 }
 
 .link3  {
-    background-image: url(/img/slideshow_backgrounds/omossarticlebild.jpg);
+    background-image: url(../img/slideshow_backgrounds/omossarticlebild.jpg);
 }
 
 .linkcard:hover {
@@ -289,7 +289,7 @@ header    {
 footer  {
    display: flex;
    position: relative;
-   background-image: url(/img/slideshow_backgrounds/landskapsfooter.jpg);
+   background-image: url(../img/slideshow_backgrounds/landskapsfooter.jpg);
    background-size: cover;
    bottom: 0;
    width: 100%;
